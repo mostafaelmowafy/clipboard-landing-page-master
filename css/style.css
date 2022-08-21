@@ -265,12 +265,7 @@ footer .icons{
 footer .icons li{
     padding-inline-end: 20px;
 }
-
-<<<<<<< HEAD
-footer .icons li:hover svg{
-=======
-footer .icons li a:hover svg{
->>>>>>> 31e9b079f6bfe0630b1eb2b554bd476f30a55b64
+footer .icons li i:hover svg{
     color: hsl(171, 66%, 44%);
     cursor: pointer;
 }

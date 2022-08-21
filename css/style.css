@@ -17,7 +17,11 @@ body{
 }
 
 /* end global toule */
-.main{
+main{
+    inline-size: 100%;
+}
+.main, main{
+    inline-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,6 +130,11 @@ ul {
     list-style-type: none;
     padding: 0;
 }
+.access{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .access .image{
     margin-top: 60px;
 }
@@ -182,9 +191,6 @@ ul {
     .subscribe .head{
         padding-block-start: 0px;
     }
-    .subscribe .button button{
-        inline-size: 200%;
-    }
 }
 footer{
     display: flex;
@@ -218,6 +224,10 @@ footer .logo{
 .information-2 li{
     margin-block-end: 20px;
 }
+.information-2 li:hover{
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
 footer .logo svg{
     transform: scale(.3);flex: 1;
 }
@@ -228,6 +238,10 @@ footer .information table{
 footer .information table td{
     padding: 5px;
     padding-inline-end: 70px;
+}
+footer .information table td:hover{
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
 }
 @media (max-width:375px){
     footer .information table{
@@ -250,6 +264,11 @@ footer .icons{
 }
 footer .icons li{
     padding-inline-end: 20px;
+}
+
+footer .icons li:hover svg{
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
 }
 .attribution { font-size: 11px; text-align: center; display: block; position: absolute;bottom: -10px;}
 .attribution a { color: hsl(228, 45%, 44%); }

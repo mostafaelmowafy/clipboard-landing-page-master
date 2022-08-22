@@ -8,6 +8,7 @@ body{
 @media (min-width:375px){
     .main{
         inline-size: 375px;
+        
     }
 }
 @media (min-width:1440px){
@@ -17,7 +18,11 @@ body{
 }
 
 /* end global toule */
-.main{
+main{
+    inline-size: 100%;
+}
+.main, main{
+    inline-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +38,6 @@ body{
 @media (max-width:375px){
     .container{
         inline-size: 300px;
-        padding: 10px;
     }
 }
 header{
@@ -126,6 +130,11 @@ ul {
     list-style-type: none;
     padding: 0;
 }
+.access{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .access .image{
     margin-top: 60px;
 }
@@ -162,7 +171,7 @@ ul {
     }
     .workflow .secound{
         align-items: center;
-        padding-inline-start: 40px;
+        
     }
 }
 .workflow .secound .one, .workflow .secound .two ,.workflow .secound .three ,.workflow .secound .four ,.workflow .secound .five{
@@ -171,7 +180,7 @@ ul {
 }
 @media (max-width:375px){
     .workflow .secound .one, .workflow .secound .two ,.workflow .secound .three ,.workflow .secound .four {
-        inline-size: 200px;
+        inline-size: 300px;
         margin-block-end: 60px;
     }
 }
@@ -181,9 +190,6 @@ ul {
 @media (max-width:375px){
     .subscribe .head{
         padding-block-start: 0px;
-    }
-    .subscribe .button button{
-        inline-size: 200%;
     }
 }
 footer{
@@ -218,6 +224,10 @@ footer .logo{
 .information-2 li{
     margin-block-end: 20px;
 }
+.information-2 li:hover{
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
 footer .logo svg{
     transform: scale(.3);flex: 1;
 }
@@ -228,6 +238,10 @@ footer .information table{
 footer .information table td{
     padding: 5px;
     padding-inline-end: 70px;
+}
+footer .information table td:hover{
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
 }
 @media (max-width:375px){
     footer .information table{
@@ -250,6 +264,11 @@ footer .icons{
 }
 footer .icons li{
     padding-inline-end: 20px;
+}
+
+footer .icons li:hover svg{
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
 }
 .attribution { font-size: 11px; text-align: center; display: block; position: absolute;bottom: -10px;}
 .attribution a { color: hsl(228, 45%, 44%); }
